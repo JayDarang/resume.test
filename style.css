@@ -1,278 +1,196 @@
-
-* {
+/* Global styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-}
-
-body {
-    background-color: #f5f5f5;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    padding: 20px 20px;
-}
-
-/* Left Side */
-
-.left-side {
-    display: grid;
-    grid-template-rows: repeat(6 1fr);
-    background-color: #9595951e;
-}
-
-.profile-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 10px;
-}
-
-.profile {
-    width: 150px;
-    clip-path: circle();
-}
-
-figcaption {
-    padding-top: 10px;
-}
-
-.contact-container {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 10px;
-}
-
-.contact-content {
-    padding-top: 5px;
-}
-
-.social-container {
-    padding: 10px;
-}
-
-.social-content {
-    display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 25px 25px ;
-    padding: 10px;
-}
-
-.facebook {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.instagram {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-.twitter {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.youtube {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-
-.education-container {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    padding: 10px;
-}
-
-.edu1, .edu2 {
-    padding: 10px 0px;
-}
-
-.language-container {
-    grid-column: 1/2;
-    grid-row: 5/6;
-    padding: 10px;
-}
-
-.language-content {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1f;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-}
-
-.language-content img {
-    width: 30px;
-}
-
-.progress-bar {
-    background-color: #959595;
-    width: 150px;
-    height: 10px;
-    border-radius: 5px;
-}
-
-.filipino {
-    height: 10px;
-    border-radius: 5px;
-    width: 95%;
-    background-color: black;
-}
-
-.english {
-    height: 10px;
-    border-radius: 5px;
-    width: 80%;
-    background-color: black;
-}
-
-.korean {
-    height: 10px;
-    border-radius: 5px;
-    width: 45%;
-    background-color: black;
-}
-
-.hobbies-container {
-    grid-column: 1/2;
-    grid-row: 6/7;
-    padding: 10px;
-}
-
-.hobbies-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-/* Right Side */
-
-
-.right-side {
-    display: grid;
-    grid-template-rows: repeat(4 1fr);
-    
-}
-
-.aboutme-container {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding: 20px 20px 10px 20px;
-}
-
-.aboutme {
-    padding-top: 10px;
-}
-
-.work-container {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 10px 20px;
-}
-
-.exp1, .exp2, .exp3 {
-    padding: 10px 0px;
-}
-
-.skill-container {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    padding: 0px 20px 20px 20px;
-}
-
-.skill-content {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    padding-top: 10px;
-    padding-left: 15px;
-    align-items: center;
-}
-
-.photography {
-    height: 10px;
-    border-radius: 5px;
-    width: 90%;
-    background-color: black;
-}
-
-.adobe {
-    height: 10px;
-    border-radius: 5px;
-    width: 70%;
-    background-color: black;
-}
-
-.java {
-    height: 10px;
-    border-radius: 5px;
-    width: 65%;
-    background-color: black;
-}
-
-.html {
-    height: 10px;
-    border-radius: 5px;
-    width: 80%;
-    background-color: black;
-}
-
-.css {
-    height: 10px;
-    border-radius: 5px;
-    width: 75%;
-    background-color: black;
-}
-
-.react {
-    height: 10px;
-    border-radius: 5px;
-    width: 60%;
-    background-color: black;
-}
-
-.reference-container {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    padding: 20px;
-}
-
-.reference-content {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding-top: 10px;
-}
-
-
-/*Media Query*/
-
-
-@media only screen and (max-width: 767px) {
-
-    .parent {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .education-container {
-        text-align: center;
-    }
-
-}
-
-
-@media only screen and (min-width: 1024px) {
- 
+  }
   
-    .parent {
-    
-        width: 1024px;
-    }
-
-}
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Layout styles */
+  .parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 50px;
+  }
+  
+  .left-side {
+    width: 45%;
+  }
+  
+  .right-side {
+    width: 50%;
+  }
+  
+  /* Profile section styles */
+  .profile-content {
+    text-align: center;
+  }
+  
+  .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  figcaption {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #0077cc;
+  }
+  
+  /* Contact section styles */
+  .contact-container {
+    margin-top: 50px;
+  }
+  
+  .contact-title {
+    text-align: center;
+  }
+  
+  .contact-content {
+    margin-top: 20px;
+  }
+  
+  .email,
+  .phone,
+  .mobile,
+  .house {
+    margin-bottom: 10px;
+  }
+  
+  .email i,
+  .phone i,
+  .mobile i,
+  .house i {
+    margin-right: 10px;
+    color: #0077cc;
+  }
+  
+  /* Social media section styles */
+  .social-container {
+    margin-top: 50px;
+  }
+  
+  .social-title {
+    text-align: center;
+  }
+  
+  .social-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-content div {
+    margin-right: 20px;
+  }
+  
+  .facebook i,
+  .instagram i,
+  .twitter i,
+  .youtube i {
+    margin-right: 10px;
+    color: #0077cc;
+  }
+  
+  /* Education section styles */
+  .education-container {
+    margin-top: 50px;
+  }
+  
+  .education-title {
+    text-align: center;
+  }
+  
+  .edu1,
+  .edu2 {
+    margin-top: 20px;
+  }
+  
+  .edu1 p:first-child,
+  .edu2 p:first-child {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  /* Language section styles */
+  .language-container {
+    margin-top: 50px;
+  }
+  
+  .language-title {
+    text-align: center;
+  }
+  
+  .language-content {
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    height: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar div {
+    background-color: #0077cc;
+    height: 100%;
+    width: 80%;
+  }
+  
+  /* Hobbies section styles */
+  .hobbies-container {
+    margin-top: 50px;
+  }
+  
+  .hobbies-title {
+    text-align: center;
+  }
+  
+  h5 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0077cc;
+  }
+  
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .portfolio img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  
+  /* Media queries */
+  @media screen
+  
